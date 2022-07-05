@@ -12,6 +12,12 @@ type TChildrenProps = {
 export default function ChildrenProps(props: TChildrenProps){
   return(
     <div>
+      <p>
+        Now we've seen how different kind of props of primitive types can
+        be passed down as props to a child component, of which this also holds
+        good for passing any of the primite types as a "child" to a component.
+        For this particular example however we would take a look at how 
+      </p>
       <h1>Working With Element Children Props</h1>
       { props.children }
     </div>
