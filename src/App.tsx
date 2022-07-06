@@ -12,6 +12,7 @@ import DestructuringProps from './components/09. Descructuring_Props';
 import ShowImportedUser from './components/10. Type_Import_And_Export';
 import ComponentReturnTypes from './components/11. Component_Return_Types';
 import TypeComposition from './components/12. Type_Compositions';
+import TypingUseState from './components/13. Typing_UseState';
 import { Users, article } from './constants';
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
       <ComponentReturnTypes />
       <hr />
       <TypeComposition networkName='Files and print' connectedUsersCount={30} connectedUsers={Users} />
+      <hr />
+      <TypingUseState />
     </div>
   );
 }
