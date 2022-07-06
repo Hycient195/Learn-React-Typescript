@@ -16,6 +16,10 @@ export default function DestructuringProps({ article }: TArticle){
         typing on the props. 
       </p>
       <p>
+        This is the approach used in large codebases, and is easily the most
+        used pattern of writing React with typescript.
+      </p>
+      <p>
         Below is an example of using types with destructured props
       </p>
       <code>

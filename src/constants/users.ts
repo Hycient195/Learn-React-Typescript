@@ -1,4 +1,6 @@
-const Users = [
+import { TUsers } from "../types";
+
+const Users: TUsers = [
   {
     name: "John Doe",
     age: 34,
