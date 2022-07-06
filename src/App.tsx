@@ -20,10 +20,10 @@ function App() {
       <hr />   
       <StringLiteral loadingState='loading' /> {/* Only loading states of "loading" and "loaded can be passed as input argument to the <Loading/> component" */}
       <hr />
-      <ChildrenProps> <em>Hi there</em> </ChildrenProps>
+      <ChildrenProps> <h3>Output is here</h3> </ChildrenProps>
       <hr />
       <h1>Optional Props</h1>
-      <OptionalProps name='Chike and the river' author='Anonymous' timesRead={40} />
+      {/* <OptionalProps name='Chike and the river' author='Anonymous' timesRead={40} /> */}
       <OptionalProps name='An African Night Entertainment' timesRead={300} /> {/* Does not throw an error if author is not passed as prop */}
       <hr />
       <EventProps inputValue='Jeff Bezos' handleSubmit={() => console.log("Hey I accept not input arguments")} handleChange={(event: React.ChangeEvent<HTMLInputElement>) => console.log(event)}/>

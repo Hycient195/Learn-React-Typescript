@@ -23,7 +23,8 @@ export default function Salute(props: SaluteProps){
             name: string
           }
           
-          export default function Salute(props: SaluteProps}){
+            return(
+              export default function Salute(props: SaluteProps}){
             return(
               <>          
                 <h3>Welcome {props.name}! do have a nice day</h3>
