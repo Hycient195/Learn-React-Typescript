@@ -8,6 +8,7 @@ import StringLiteral from './components/05. String_Literal_Props';
 import OptionalProps from './components/06. Optional_Props';
 import EventProps from './components/07. Event_Props';
 import StyleProps from './components/08. Style_Props';
+import DestructuringProps from './components/09. Descructuring_Props';
 import { Users, article } from './constants';
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
       <EventProps inputValue='Jeff Bezos' handleSubmit={() => console.log("Hey I accept not input arguments")} handleChange={(event: React.ChangeEvent<HTMLInputElement>) => console.log(event)}/>
       <hr />
       <StyleProps style={{border: '1px solid silver', padding: '2em', backgroundColor: 'tomato'}} />
+      <hr />
+      <DestructuringProps article={article} />
     </div>
   );
 }
