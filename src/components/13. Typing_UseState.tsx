@@ -67,7 +67,7 @@ export default function TypingUseState(){
         from the future value type.
       </p>
       <h2>Article</h2>
-      <h3>Name - {article?.name}, author {article?.author}, timesRead {article?.timesRead}, </h3>
+      <h3>Name - {article?.name} | author - {article?.author} | timesRead - {article?.timesRead}, </h3>
       <button onClick={handleSetArticle} >Set article content</button>
     </>
   )
