@@ -14,6 +14,7 @@ import ComponentReturnTypes from './components/11. Component_Return_Types';
 import TypeComposition from './components/12. Type_Compositions';
 import TypingUseState from './components/13. Typing_UseState';
 import { TypingClassComponent } from './components/14. Typing_Class_Components';
+import ComponentProps from './components/15. Component_Props';
 import { Users, article } from './constants';
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
       <TypingUseState />
       <hr />
       <TypingClassComponent input="String passed as prop" />
+      <hr />
+      <ComponentProps Component={ComponentReturnTypes} />
     </div>
   );
 }
