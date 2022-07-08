@@ -1,4 +1,4 @@
-type TArticle = {
+export type TArticle = {
   article:{
     name: string,
     author: string,

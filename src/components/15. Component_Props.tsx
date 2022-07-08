@@ -1,5 +1,7 @@
+import { TArticle } from './09. Descructuring_Props'
+
 type TComponent = {
-  Component: React.ComponentType;
+  Component: React.ComponentType<TArticle>;
 }
 
 export default function ComponentProps({ Component }: TComponent){
@@ -10,12 +12,12 @@ export default function ComponentProps({ Component }: TComponent){
 
       <p>
         We have previously learnt how to pass element as props from a parent
-        component, to a child component. However, case is a little bit different,
+        component, to a child component. However, it is a little bit different,
         when a custom component is passed as a prop to another component.
       </p>
       <p>
-        In other to pass a custom component as props to another component is 
-        should have a type of <strong>"React.ComponentType"</strong>.
+        In other to pass a custom component as props to another component, the
+        child component's props should have a type of <strong>"React.ComponentType"</strong>
       </p>
       <p>
         Let's see how this comes into play in the example below.
@@ -56,10 +58,32 @@ export default function ComponentProps({ Component }: TComponent){
       </code>
 
       <p>
+        Additonally if the component passed as props receives an input argument, the
+        input argument type can be exported and passed as a generic argument to "React.Component", as
+        seen below.
+      </p>
+
+      <code>
+        <pre>
+          {
+            `
+            type TComponent = {
+              Component: React.ComponentType<TArticle>;
+            }
+            `
+          }
+        </pre>
+      </code>
+
+      <p>
         Below here is the output of the component
       </p>
 
-      <Component />
+      <Component article={{
+        name: "Demo article",
+        author: "Mike",
+        timesRead: 20
+      }} />
     </>
   )
 }
