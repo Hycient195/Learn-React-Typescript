@@ -17,6 +17,7 @@ import { TypingClassComponent } from './components/14. Typing_Class_Components';
 import ComponentProps from './components/15. Component_Props';
 import GenericProps from './components/16. Generic_Props_1';
 import GenericProps2 from './components/16. Generic_Props_2';
+import RestrictProps from './components/17. Props_Restriction.';
 import { Users, article } from './constants';
 
 function App() {
@@ -56,6 +57,8 @@ function App() {
       <hr />
       <GenericProps name="DummyName" hobbies={["Swimming", "Running"]} />
       {/* <GenericProps2 user={{reg: 315, firstName: "Matt", lastName: "Smatt", isAvaliable: true}} /> */}
+      <hr />
+      <RestrictProps exists={true} isHidden={true}/>
     </div>
   );
 }
