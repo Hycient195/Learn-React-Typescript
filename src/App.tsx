@@ -19,6 +19,7 @@ import GenericProps from './components/16. Generic_Props_1';
 import GenericProps2 from './components/16. Generic_Props_2';
 import RestrictProps from './components/17. Props_Restriction.';
 import TemplateLiteralTypes from './components/18. Template_Literal_Types';
+import CustomInput from './components/19. Encasing_HTML_Elements';
 import { Users, article } from './constants';
 
 function App() {
@@ -62,6 +63,8 @@ function App() {
       <RestrictProps exists={true} isHidden={true}/>
       <hr />
       <TemplateLiteralTypes property="margin-right" />
+      <hr />
+      <CustomInput fullwidth variant='outlined' />
     </div>
   );
 }
