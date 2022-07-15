@@ -15,7 +15,8 @@ import TypeComposition from './components/12. Type_Compositions';
 import TypingUseState from './components/13. Typing_UseState';
 import { TypingClassComponent } from './components/14. Typing_Class_Components';
 import ComponentProps from './components/15. Component_Props';
-import GenericProps from './components/16. Generic_Props';
+import GenericProps from './components/16. Generic_Props_1';
+import GenericProps2 from './components/16. Generic_Props_2';
 import { Users, article } from './constants';
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
       <ComponentProps Component={DestructuringProps} />
       <hr />
       <GenericProps name="DummyName" hobbies={["Swimming", "Running"]} />
+      {/* <GenericProps2 user={{reg: 315, firstName: "Matt", lastName: "Smatt", isAvaliable: true}} /> */}
     </div>
   );
 }
