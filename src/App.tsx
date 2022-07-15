@@ -18,6 +18,7 @@ import ComponentProps from './components/15. Component_Props';
 import GenericProps from './components/16. Generic_Props_1';
 import GenericProps2 from './components/16. Generic_Props_2';
 import RestrictProps from './components/17. Props_Restriction.';
+import TemplateLiteralTypes from './components/18. Template_Literal_Types';
 import { Users, article } from './constants';
 
 function App() {
@@ -59,6 +60,8 @@ function App() {
       {/* <GenericProps2 user={{reg: 315, firstName: "Matt", lastName: "Smatt", isAvaliable: true}} /> */}
       <hr />
       <RestrictProps exists={true} isHidden={true}/>
+      <hr />
+      <TemplateLiteralTypes property="margin-right" />
     </div>
   );
 }
